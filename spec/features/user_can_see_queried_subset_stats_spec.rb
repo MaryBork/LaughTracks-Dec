@@ -14,9 +14,9 @@
 
       visit('/comedians?age=34')
 
-      within('div#stats'){expect(Comedian.average_age.to_i.round()).to eq(47)}
-      within('div#stats'){expect(Special.average_length.to_i).to eq(71)}
-      within('div#stats'){expect(Comedian.unique_cities).to eq(["Brooklyn, NY", "New York, NY", "Detroit, MI"])}
+      within('div.stats'){expect(Comedian.average_age.to_i.round()).to eq(47)}
+      within('div.stats'){expect(Special.average_length.to_i).to eq(71)}
+      within('div.stats'){expect(Comedian.unique_cities).to eq(["Brooklyn, NY", "New York, NY", "Detroit, MI"])}
 
       expect(page).to have_content(comedian_1.name)
       expect(page).to have_content(comedian_2.name)

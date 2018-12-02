@@ -5,7 +5,7 @@ RSpec.describe 'A visitor to our show page' do
 
     visit '/comedians'
 
-    within('div#comedians') do
+    within('div.comedians') do
       expect(page).to have_content(comedian_1.name)
       expect(page).to have_content(comedian_1.age)
       expect(page).to have_content(comedian_1.city)

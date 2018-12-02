@@ -10,10 +10,10 @@
       special_3 = comedian_3.specials.create(title: "The Death of Karl Marx", length: 66, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWV9370JYE5qF-NxtNaEXnkQmZNRswIFIDHDBFdjKFfTA_BMUNg")
 
       visit '/comedians'
-    
-      within('div#stats'){expect(Comedian.average_age).to eq(59)}
-      within('div#stats'){expect(Special.average_length).to eq(55)}
-      within('div#stats'){expect(Comedian.unique_cities).to eq(["New York, NY", "Brooklyn, NY"])}
+
+      within('div.stats'){expect(Comedian.average_age).to eq(59)}
+      within('div.stats'){expect(Special.average_length).to eq(55)}
+      within('div.stats'){expect(Comedian.unique_cities).to eq(["New York, NY", "Brooklyn, NY"])}
 
     end
   end

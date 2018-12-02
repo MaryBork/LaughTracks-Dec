@@ -6,6 +6,10 @@ Bundler.require(:default, :test)
 require File.expand_path('../../config/environment.rb', __FILE__)
 require 'capybara/dsl'
 
+require 'simplecov'
+SimpleCov.start
+require File.expand_path('../../config/environment.rb', __FILE__)
+
 Capybara.app = LaughTracksApp
 Capybara.save_path = 'tmp/capybara'
 
