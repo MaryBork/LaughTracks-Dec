@@ -4,11 +4,12 @@ development:
   adapter: postgresql
   database: laugh-tracks-development
 
+
 test:
   adapter: postgresql
   database: laugh-tracks-test
 
+
 production:
   adapter: postgresql
   database: laugh-tracks-production
-

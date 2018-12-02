@@ -1,0 +1,58 @@
+h1{
+  display:center;
+  text-align: center;
+  color: black;
+  font-size: 36;
+  font-weight: bold;
+}
+ .comedians ul {
+
+   list-style: none;
+   display:block;
+   float: center;
+   padding: 40px;
+   text-align: left;
+   background-color: silver;
+   border: 15px solid pink;
+   font-family: monospace;
+   font-size: 14;
+   font-weight: bold;
+   color: black;
+   border-radius: 25px;
+
+
+ }
+
+
+.comedians .info {
+ border: 2px red solid;
+ text-align: center;
+ }
+
+.comedians .photo {
+  border: 10px black solid;
+  height: 300;
+  width: 300;
+  display: flex;
+}
+
+
+.stats {
+  list-style: none;
+  display:block;
+  float: center;
+  padding: 40px;
+  text-align: center;
+  background-color: silver;
+  border: 15px solid pink;
+  font-family: monospace;
+  font-size: 14;
+  font-weight: bold;
+  color: black;
+  border-radius: 25px;
+}
+.stat_title{
+  font-size: 25;
+  color: red;
+  font-family: times;
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+  <LINK rel=stylesheet type="text/css" href="/main.css">
+</head>
+
+<h1> Laugh-Tracks </h1>
+<div class='stats'>
+  <h1> Statistics: </h1>
+  <div class=stat_title><p>Average Comedian's Age:</div> <%=@comedians.average_age.to_i %> Years Old</p>
+    <% if @specials.average_length.to_i/60 > 1 %>
+    <div class=stat_title><p>Average Special's Length:</div> <%=@specials.average_length.to_i/60 %> Minutes </p>
+    <% else %>
+    <div class=stat_title><p>Average Special's Length: </div><%= @specials.average_length.to_i/60 %> Minute </p>
+    <% end %>
+  <div class=stat_title><p> Comedian's Cities: </div><% @comedians.unique_cities.each do |city| %></p>
+    <p> <%= city %> </p>
+  <% end %>
+</div>
+
+<div class='comedians'>
+  <% @comedians.each do |comedian| %>
+      <ul>
+      <div class='info'>
+      <li><h1>Name: <%= comedian.name %></h1></li>
+      <li><p>Age: <%= comedian.age %> Years Old</p></li>
+      <li><p>City: <%= comedian.city %></p></li>
+      <p> Number of Specials:<%= comedian.specials.total_count %></p>
+    </div>
+      <% comedian.specials.each do |special| %>
+            <li><h3>Featured Special: <%= special.title %> </h3></li>
+              <% if special.length/60 > 1 %>
+              <li><p>Length: <%= special.length/60 %> Minutes </p></li>
+              <% else %>
+              <li><p>Length: <%= special.length/60 %> Minute </p></li>
+              <% end %>
+            <div class='photo'>
+              <li><img src="<%= special.image %>" width='300' height ='300'></li>
+            </div>
+        <% end %>
+      </ul>
+
+  <% end %>
+
+</div>
+
+</html>

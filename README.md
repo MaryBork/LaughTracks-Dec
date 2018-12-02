@@ -39,7 +39,7 @@ bundle update
 ## User Stories
 
 ```
-User Story 1
+User Story 1 *
 
 As a visitor
 When I visit `/comedians`
@@ -57,7 +57,7 @@ information for each comedian:
 ```
 
 ```
-User Story 2
+User Story 2 *
 
 As a visitor
 When I visit `/comedians`
@@ -68,7 +68,7 @@ Then I also see a list of each comedian's TV specials' names
 ```
 
 ```
-User Story 3
+User Story 3 * --TEST FOR IMAGE/CSS
 
 As a visitor
 When I visit `/comedians`
@@ -81,7 +81,7 @@ I also see each special's run-time length in minutes, and a thumbnail image.
 ```
 
 ```
-User Story 4
+User Story 4 *
 
 As a visitor
 When I visit `/comedians`
@@ -96,7 +96,7 @@ using Ruby
 ```
 
 ```
-User Story 5
+User Story 5 (*)
 
 As a visitor
 When I visit `/comedians?age=34`
@@ -118,14 +118,14 @@ of TV specials for every comedian.
 ```
 
 ```
-User Story 7
+User Story 7 (*)
 
 As a visitor
 When I visit `/comedians?age=34`
 Then I see a list of all comedians with an age of 34
-Just like a previous User Story, BUT all other statistics 
-information in the 'Statistics' area of the page should be limited 
-to reflect only the information about the comedians listed on 
+Just like a previous User Story, BUT all other statistics
+information in the 'Statistics' area of the page should be limited
+to reflect only the information about the comedians listed on
 the page.
 
 - Testing should ensure that calculated statistics are
@@ -133,7 +133,7 @@ the page.
 ```
 
 ```
-User Story 8
+User Story 8 (*)
 
 As a visitor
 When I visit `/comedians/new`
@@ -182,20 +182,20 @@ sorted alphabetically by the age of the comedian.
 At the end of this project, write a reflection on what you learned and implemented.
 This will help you review your own code and gain practice explaining/talking through the code and the process/decisions that were made along the way. Include code snippets from the project in your explanations.
 
-We reccommend writing your blog on [Medium](https://medium.com), but if you have a blog site that you already use that is okay too. However, it must be publically accessible and the link should be submitted to your instructors via Direct Message. 
+We reccommend writing your blog on [Medium](https://medium.com), but if you have a blog site that you already use that is okay too. However, it must be publically accessible and the link should be submitted to your instructors via Direct Message.
 
-Here are some questions to think about as you write your post: 
+Here are some questions to think about as you write your post:
 
-- How did you approach this project? 
+- How did you approach this project?
   What sort of planning did you do?
-  
+
 - What was the most challenging part of the project?
-  How did you deal with that challenge? 
-  Were you able to overcome it? 
+  How did you deal with that challenge?
+  Were you able to overcome it?
   If yes, how did you overcome it?
   If no, what do you think is the reason for not being able to and what would you do differenlty?
-  
-- What did you enjoy most about the project? 
+
+- What did you enjoy most about the project?
 
 - What part of the project are you most proud of and why?
 
